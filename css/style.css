@@ -38,8 +38,10 @@ header .container {
     left: 0;
     right: 0;
     display: flex;
-    padding: 2em 0;
+    padding-top: 1em;
     justify-content: space-between;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--accent-color);
 }
 
 .nav-list {
@@ -87,4 +89,13 @@ form :is(input, textarea, select) {
     font-weight: 700;
     font-style: italic;
     font-family: "Pacifico", cursive;
+}
+
+.stick-top{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transform: translateY(-0.5em);
+    padding: 2em;
+    
 }
