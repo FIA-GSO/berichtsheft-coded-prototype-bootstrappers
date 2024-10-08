@@ -1,0 +1,74 @@
+:root {
+    --primary-color: white;
+    --secondary-color: grey;
+    --text-color: black;
+    --accent-color: blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: min(90%, 95vw);
+    margin-inline: auto;
+}
+
+header .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 2em 0;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: none;
+}
+
+.nav-list .nav-item {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+.nav-list .active {
+    color: var(--accent-color);
+}
+
+
+@media(min-width: 700px) {
+    .nav-list {
+        list-style: none;
+        display: flex;
+        gap: 2em;
+    }
+}
+
+
+/* Form */
+
+form {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    gap: 1em;
+}
+
+form :is(input, textarea, select) {
+    padding: 1em;
+}
