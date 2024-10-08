@@ -20,10 +20,20 @@ body {
     height: 100vh;
 }
 
+.flex {
+    display: flex;
+    gap: 1em;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 .styled-btn {
     background-color: var(--accent-color);
     color: var(--primary-color);
-    border-radius: var(--border-radius);
     border: none;
 }
 
@@ -77,6 +87,7 @@ form {
 }
 
 form :is(input, textarea, select) {
+    border-radius: var(--border-radius);
     padding: 1em;
 }
 
