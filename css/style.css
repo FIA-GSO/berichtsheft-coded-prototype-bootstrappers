@@ -72,3 +72,12 @@ form {
 form :is(input, textarea, select) {
     padding: 1em;
 }
+
+.logo {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+    font-family: "Pacifico", cursive;
+}
