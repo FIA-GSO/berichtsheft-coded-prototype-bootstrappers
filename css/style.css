@@ -99,3 +99,7 @@ form :is(input, textarea, select) {
     padding: 2em;
     
 }
+
+textarea {
+    resize: none;
+}
