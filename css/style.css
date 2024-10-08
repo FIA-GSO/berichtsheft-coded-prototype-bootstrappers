@@ -2,7 +2,8 @@
     --primary-color: white;
     --secondary-color: grey;
     --text-color: black;
-    --accent-color: blue;
+    --accent-color: #6764FF;
+    --border-radius: 8px;
 }
 
 * {
@@ -17,6 +18,13 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+.styled-btn {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border-radius: var(--border-radius);
+    border: none;
 }
 
 .container {
@@ -42,7 +50,6 @@ header .container {
     text-decoration: none;
     color: var(--text-color);
 }
-
 
 .nav-list .active {
     color: var(--accent-color);
