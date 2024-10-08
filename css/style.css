@@ -15,14 +15,19 @@
 body {
     font-family: "Roboto", sans-serif;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
     height: 100vh;
 }
 
-.flex {
+.flex-wrap {
     display: flex;
+    flex-wrap: wrap;
     gap: 1em;
+}
+
+.flex-wrap > * {
+    flex: 1 0 150px;
 }
 
 .flex-col {
@@ -43,10 +48,6 @@ body {
 }
 
 header .container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     display: flex;
     padding-top: 1em;
     justify-content: space-between;
@@ -85,12 +86,14 @@ form {
     flex-direction: column;
     max-width: 500px;
     width: 100%;
-    gap: 1em;
+    gap: 2em;
 }
 
 form :is(input, textarea, select) {
+    border: 1px solid var(--secondary-color);
     border-radius: var(--border-radius);
     padding: 1em;
+    width: 100%;
 }
 
 .logo {
@@ -108,7 +111,11 @@ form :is(input, textarea, select) {
     z-index: 10;
     transform: translateY(-0.5em);
     padding: 2em;
-    
+}
+
+label {
+    display: block;
+    margin-bottom: 1em;
 }
 
 textarea {

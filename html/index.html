@@ -35,42 +35,39 @@
     <div class="container">
 
         <!-- Form -->
-        <form action="">
+        <form action="/" method="POST">
             
-            <div class="flex">
+            <div class="flex-wrap">
                 
                 <!-- Start Datetime -->
-                <div class="flex-col">
+                <div>
                     <label for="">Start Zeit</label>
                     <input type="date">
                 </div>
                 
                 <!-- End Datetime -->
-                <div class="flex-col">
+                <div>
                     <label for="">End Zeit</label>
                     <input type="date">
                 </div>
-
-            <!-- Start Datetime -->
-            <label for="">Start Zeit</label>
-            <input type="date">
-    
-            <!-- End Datetime -->
-            <label for="">End Zeit</label>
-            <input type="date">
-    
-            <!-- Dropdown -->
-            <label for="" >Ausbilder</label>
-            <select>
-                <option value="A">Ausbilder 1</option>
-                <option value="B">Ausbilder 2</option>
-                <option value="C">Ausbilder 3</option>
-            </select>
+        
+                <!-- Dropdown -->
+                <div>
+                    <label for="">Ausbilder</label>
+                    <select>
+                        <option value="A">Ausbilder 1</option>
+                        <option value="B">Ausbilder 2</option>
+                        <option value="C">Ausbilder 3</option>
+                    </select>
+                </div>
+            </div>
     
             <!-- Textarea -->
-            <label for="">Wochenbericht</label>
-            <textarea placeholder="Wochenbericht"></textarea>
-    
+            <div>
+                <label for="">Wochenbericht</label>
+                <textarea placeholder="Wochenbericht"></textarea>
+            </div>
+ 
             <!-- Submit -->
             <input type="submit" class="styled-btn">
         </form>
