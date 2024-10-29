@@ -83,12 +83,27 @@ header .container {
 
 .nav-list .nav-item {
     text-decoration: none;
-    color: var(--text-color);
+    color: grey;
 }
 
 .nav-list .active {
-    color: var(--accent-color);
+    font-weight: bold;
+    color: var(--text-color);
+    position: relative;
 }
+
+.nav-list .active::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 4px;
+    border-radius: 1em;
+    background-color: var(--accent-color);
+}
+
 
 
 @media (min-width: 700px) {
