@@ -1,0 +1,305 @@
+:root {
+    --primary-color: white;
+    --secondary-color: grey;
+    --text-color: black;
+    --accent-color: #6764FF;
+    --border-radius: 8px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+  height: 1vw !important;
+  font-size: 2vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+textarea, body {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2em;
+}
+
+
+.profile-pic {
+    width: 3vw;
+    height: 3vw;
+}
+
+.flex {
+    display: flex;
+    gap: 1em;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.flex-wrap > * {
+    flex: 1 0 150px !important;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.styled-btn {
+    font-size: 1em;
+    cursor: pointer !important;
+    background-color: var(--accent-color) !important;
+    color: var(--primary-color) !important;
+    padding: 1em !important;
+    border: none !important;
+    border-radius: var(--border-radius) !important;
+    transition: box-shadow 0.4s, transform 0.4s;
+}
+
+.styled-btn:hover {
+    transform: scale(0.9);
+    box-shadow: 0 4px 20px var(--accent-color);
+}
+
+.container {
+    width: min(90%, 95vw);
+    margin-inline: auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color) !important;
+}
+
+.nav-list {
+    display: none;
+    align-items: center;
+}
+
+.nav-list .nav-item {
+    position: relative;
+    text-decoration: none;
+    color: grey;
+    transition: color 0.2s;
+}
+
+.nav-list .nav-item:hover {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav-list .nav-item::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 4px;
+    border-radius: 1em;
+    background-color: var(--accent-color);
+    transition: width 0.2s;
+}
+
+.nav-list .active {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.nav-list .active::before,
+.nav-list .nav-item:hover::before {
+    width: 30px;
+}
+
+
+@media (min-width: 800px) {
+    .nav-list {
+        list-style: none;
+        display: flex;
+        gap: 2em;
+    }
+}
+
+
+/* Form */
+
+form {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    gap: 1em;
+    transform: translateY(-5vh);
+}
+
+form .styled-box {
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    padding: 1em;
+    width: 100%;
+}
+
+form :is(input, textarea, select) {
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    padding: 1em;
+    width: 100%;
+}
+
+form #fileUpload {
+    display: none;
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+    font-family: "Pacifico", cursive;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.stick-top {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transform: translateY(-0.5em);
+    padding: 2em;
+}
+
+label {
+    font-size: 0.8em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+}
+
+textarea {
+    resize: none;
+    min-height: 20vh;
+    max-height: 30vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.footer-text {
+    text-align: center;
+    padding: 1em;
+    transform: translateY(-10vh);
+}
+
+select.round {
+    /* styling */
+    background-color: white;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+
+    /* reset */
+
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    radial-gradient(#ddd 70%, transparent 72%);
+    background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - .5em) .5em;
+    background-size: 5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+    background-repeat: no-repeat;
+}
+
+select.round:focus {
+    background-image: linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    radial-gradient(gray 70%, transparent 72%);
+    background-position: calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - .5em) .5em;
+    background-size: 5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+    background-repeat: no-repeat;
+    border-color: green;
+    outline: 0;
+}
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+
+.crazy_button {
+    --😀: #644dff;
+    --😀😀: #4836bb;
+    --😀😀😀: #654dff63;
+    cursor: pointer;
+    width: 184px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.125em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    background: var(--😀);
+    border: 2px solid var(--😀😀);
+    border-radius: .75rem;
+    box-shadow: 0 8px 0 var(--😀😀);
+    transform: skew(-10deg);
+    transition: all .1s ease;
+    filter: drop-shadow(0 15px 20px var(--😀😀😀));
+}
+
+.crazy_button:active {
+    letter-spacing: 0px;
+    transform: skew(-10deg) translateY(8px);
+    box-shadow: 0 0 0 var(--😀😀😀);
+}
+
+.highlight {
+    color: var(--accent-color);
+}
+
+.mask-heart {
+    mask-image: url("data:image/svg+xml,%3csvg width='200' height='185' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M100 184.606a15.384 15.384 0 0 1-8.653-2.678C53.565 156.28 37.205 138.695 28.182 127.7 8.952 104.264-.254 80.202.005 54.146.308 24.287 24.264 0 53.406 0c21.192 0 35.869 11.937 44.416 21.879a2.884 2.884 0 0 0 4.356 0C110.725 11.927 125.402 0 146.594 0c29.142 0 53.098 24.287 53.4 54.151.26 26.061-8.956 50.122-28.176 73.554-9.023 10.994-25.383 28.58-63.165 54.228a15.384 15.384 0 0 1-8.653 2.673Z' fill='black' fill-rule='nonzero'/%3e%3c/svg%3e");
+  }
+
+.mask {
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
