@@ -41,49 +41,49 @@
 
 <div class="container">
 
-    <!-- Form -->
-    <form action="/" method="POST">
-
-        <div class="flex-wrap">
-
-            <!-- Start Datetime -->
-            <div>
-                <label for="">Start Zeit</label>
-                <input type="date" required>
+        <!-- Form -->
+        <form action="/" method="POST">
+            
+            <div class="flex-wrap">
+                
+                <!-- Start Datetime -->
+                <div>
+                    <label for="">Start Zeit</label>
+                    <input type="date" required>
+                </div>
+                
+                <!-- End Datetime -->
+                <div>
+                    <label for="">End Zeit</label>
+                    <input type="date" required>
+                </div>
+        
+                <!-- Dropdown -->
+                <div>
+                    <label for="ausbilder-select">Ausbilder</label>
+                    <select class="styled-box" id="ausbilder-select" onchange="toggleInputField()" required>
+                        <option value="A">Ausbilder 1</option>
+                        <option value="B">Ausbilder 2</option>
+                        <option value="new">Neu</option>
+                    </select>
+                </div>
+                
+                <div id="new-ausbilder-container" style="display: none; margin-top: 10px;">
+                    <label for="input-ausbilder">
+                        Neuer Ausbilder Name:
+                    </label>
+                    <input class="input-ausbilder" name="input-ausbilder" id="input-ausbilder" type="text" placeholder="Enter new Ausbilder name">
+                </div> 
             </div>
-
-            <!-- End Datetime -->
-            <div>
-                <label for="">End Zeit</label>
-                <input type="date" required>
+    
+              <!-- Textarea -->
+              <div>
+                <label for="">Wochenbericht</label>
+                <textarea class="styled-box" placeholder="Schreiben Sie hier rein" required></textarea>
             </div>
-
-            <!-- Dropdown -->
-            <div>
-                <label for="ausbilder-select">Ausbilder</label>
-                <select class="round" id="ausbilder-select" onchange="toggleInputField()" required>
-                    <option value="A">Ausbilder 1</option>
-                    <option value="B">Ausbilder 2</option>
-                    <option value="new">Neu</option>
-                </select>
-            </div>
-
-        </div>
-        <div id="new-ausbilder-container" style="display: none; margin-top: 10px;">
-            <label for="input-ausbilder">
-                Neuer Ausbilder Name:
-            </label>
-            <input class="input-ausbilder" name="input-ausbilder" id="input-ausbilder" type="text"
-                   placeholder="Enter new Ausbilder name">
-        </div>
-        <!-- Textarea -->
-        <div>
-            <label for="">Wochenbericht</label>
-            <textarea class="styled-box" placeholder="Schreiben Sie hier rein" required></textarea>
-        </div>
-
-        <div class="styled-box flex">
-            <button class="styled-btn" title="Attach new file">
+ 
+            <div class="styled-box flex">
+                <button class="styled-btn" title="Attach new file">
                     <span class="material-symbols-outlined">
                         attach_file
                     </span>
