@@ -54,7 +54,7 @@ body {
 }
 
 .flex-wrap > * {
-    flex: 1 0 150px;
+    flex: 1 0 150px !important;
 }
 
 .flex-col {
