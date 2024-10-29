@@ -22,8 +22,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;    
-    background-color: var(--primary-color) !important;
-    color: var(--text-color) !important;
 }
 
 textarea, body {
@@ -33,8 +31,8 @@ textarea, body {
 body {
     display: flex;
     flex-direction: column;
-    gap: 2em;
     height: 100vh;
+    gap: 2em;
 }
 
 .profile-pic {
@@ -87,7 +85,6 @@ header .container {
     display: flex;
     justify-content: space-between;
     background-color: var(--primary-color) !important;
-    height: 4vw;
 }
 
 .nav-list {
@@ -148,7 +145,7 @@ form {
     flex-direction: column;
     max-width: 500px;
     width: 100%;
-    gap: 2em;
+    gap: 1em;
 }
 
 form .styled-box {
