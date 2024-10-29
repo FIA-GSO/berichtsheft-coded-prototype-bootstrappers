@@ -70,6 +70,12 @@ body {
     padding: 1em !important;
     border: none !important;
     border-radius: var(--border-radius) !important;
+    transition: box-shadow 0.4s, transform 0.4s;
+}
+
+.styled-btn:hover {
+    transform: scale(0.9);
+    box-shadow: 0 4px 20px var(--accent-color);
 }
 
 .container {
