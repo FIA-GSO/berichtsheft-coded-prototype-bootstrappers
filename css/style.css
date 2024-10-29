@@ -30,6 +30,11 @@ body {
     height: 100vh;
 }
 
+.profile-pic {
+    width: 3vw;
+    height: 3vw;
+}
+
 .flex {
     display: flex;
     gap: 1em;
@@ -53,8 +58,8 @@ body {
 
 .styled-btn {
     cursor: pointer;
-    background-color: var(--accent-color);
-    color: var(--primary-color);
+    background-color: var(--accent-color) !important;
+    color: var(--primary-color) !important;
     padding: 1em;
     border: none;
     border-radius: var(--border-radius);
