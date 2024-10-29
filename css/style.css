@@ -128,7 +128,7 @@ header .container {
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     .nav-list {
         list-style: none;
         display: flex;
