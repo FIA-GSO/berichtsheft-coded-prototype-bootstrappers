@@ -33,6 +33,7 @@ body {
     flex-direction: column;
     height: 100vh;
     gap: 2em;
+    background-color: #87CEEB;
 }
 
 .profile-pic {
@@ -295,3 +296,35 @@ select:-moz-focusring {
     mask-repeat: no-repeat;
     mask-position: center;
   }
+
+.nyancat-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Verhindert, dass die Nyan Cat klickbar ist */
+}
+
+.nyancat {
+    position: absolute;
+    width: 80px; /* Größe der Nyan Cat */
+    animation: fly 10s linear infinite, bobbing 2s ease-in-out infinite;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(-100px, 50vh); /* Start von links außen */
+    }
+    100% {
+        transform: translate(100vw, 50vh); /* Endet am rechten Rand */
+    }
+}
+
+@keyframes bobbing {
+    0%, 100% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }}

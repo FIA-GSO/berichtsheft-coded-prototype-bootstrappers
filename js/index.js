@@ -9,3 +9,18 @@ function toggleInputField() {
         inputContainer.style.display = "none";
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const nyanCat = document.querySelector(".nyancat");
+
+    function randomYPosition() {
+        const windowHeight = window.innerHeight;
+        return Math.floor(Math.random() * (windowHeight - 100)) + "px";
+    }
+
+    function startFlying() {
+        nyanCat.style.top = randomYPosition();
+    }
+
+    startFlying();
+});
