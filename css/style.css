@@ -57,10 +57,10 @@ body {
 .flex-col {
     display: flex;
     flex-direction: column;
-    gap: 1em;
 }
 
 .styled-btn {
+    font-size: 1em;
     cursor: pointer !important;
     background-color: var(--accent-color) !important;
     color: var(--primary-color) !important;
@@ -163,6 +163,8 @@ form :is(input, textarea, select) {
 }
 
 label {
+    font-size: 0.8em;
+    font-weight: bold;
     display: block;
     margin-bottom: 1em;
 }
@@ -257,4 +259,8 @@ select:-moz-focusring {
     letter-spacing: 0px;
     transform: skew(-10deg) translateY(8px);
     box-shadow: 0 0 0 var(--😀😀😀);
+}
+
+.highlight {
+    color: var(--accent-color);
 }
