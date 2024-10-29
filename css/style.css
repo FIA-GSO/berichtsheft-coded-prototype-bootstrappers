@@ -75,28 +75,39 @@ header .container {
 }
 
 .nav-list .nav-item {
+    position: relative;
     text-decoration: none;
     color: grey;
+    transition: color 0.2s;
 }
 
-.nav-list .active {
-    font-weight: bold;
+.nav-list .nav-item:hover {
+    text-decoration: none;
     color: var(--text-color);
-    position: relative;
 }
 
-.nav-list .active::before {
+.nav-list .nav-item::before {
     content: "";
     position: absolute;
     bottom: -20px;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30px;
+    width: 0;
     height: 4px;
     border-radius: 1em;
     background-color: var(--accent-color);
+    transition: width 0.2s;
 }
 
+.nav-list .active {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.nav-list .active::before,
+.nav-list .nav-item:hover::before {
+    width: 30px;
+}
 
 
 @media (min-width: 700px) {
