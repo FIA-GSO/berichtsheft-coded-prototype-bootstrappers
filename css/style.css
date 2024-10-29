@@ -157,6 +157,10 @@ form :is(input, textarea, select) {
     width: 100%;
 }
 
+form #fileUpload {
+    display: none;
+}
+
 .logo {
     text-decoration: none;
     color: var(--text-color);
