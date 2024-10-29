@@ -20,8 +20,11 @@
     box-sizing: border-box;
 }
 
-body {
+textarea, body {
     font-family: "Roboto", sans-serif;
+}
+
+body {
     display: flex;
     flex-direction: column;
     gap: 2em;
