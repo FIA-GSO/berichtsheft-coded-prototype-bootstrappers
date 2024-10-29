@@ -204,8 +204,6 @@ textarea {
 select.round {
     /* styling */
     background-color: white;
-    border: thin solid blue;
-    border-radius: 4px;
     display: inline-block;
     font: inherit;
     line-height: 1.5em;
