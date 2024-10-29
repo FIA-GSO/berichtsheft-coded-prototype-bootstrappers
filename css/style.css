@@ -31,9 +31,10 @@ textarea, body {
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+
     gap: 2em;
 }
+
 
 .profile-pic {
     width: 3vw;
@@ -146,6 +147,7 @@ form {
     max-width: 500px;
     width: 100%;
     gap: 1em;
+    transform: translateY(-5vh);
 }
 
 form .styled-box {
@@ -199,6 +201,12 @@ textarea {
     overflow-y: auto;
     scrollbar-width: none;
     scroll-behavior: smooth;
+}
+
+.footer-text {
+    text-align: center;
+    padding: 1em;
+    transform: translateY(-10vh);
 }
 
 select.round {
