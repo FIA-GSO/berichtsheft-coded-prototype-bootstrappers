@@ -43,19 +43,19 @@
                 <!-- Start Datetime -->
                 <div>
                     <label for="">Start Zeit</label>
-                    <input type="date">
+                    <input type="date" required>
                 </div>
                 
                 <!-- End Datetime -->
                 <div>
                     <label for="">End Zeit</label>
-                    <input type="date">
+                    <input type="date" required>
                 </div>
         
                 <!-- Dropdown -->
                 <div>
                     <label for="ausbilder-select">Ausbilder</label>
-                    <select class="round" id="ausbilder-select" onchange="toggleInputField()">
+                    <select class="round" id="ausbilder-select" onchange="toggleInputField()" required>
                         <option value="A">Ausbilder 1</option>
                         <option value="B">Ausbilder 2</option>
                         <option value="new">Neu</option>
@@ -73,7 +73,7 @@
               <!-- Textarea -->
               <div>
                 <label for="">Wochenbericht</label>
-                <textarea class="styled-box" placeholder="Schreiben Sie hier rein"></textarea>
+                <textarea class="styled-box" placeholder="Schreiben Sie hier rein" required></textarea>
             </div>
  
             <div class="styled-box flex">
