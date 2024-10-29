@@ -9,7 +9,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
+    background-color: var(--primary-color) !important;
+    color: var(--text-color) !important;
 }
 
 body {
