@@ -46,10 +46,10 @@ body {
 .flex-col {
     display: flex;
     flex-direction: column;
-    gap: 1em;
 }
 
 .styled-btn {
+    font-size: 1em;
     cursor: pointer;
     background-color: var(--accent-color);
     color: var(--primary-color);
@@ -152,6 +152,7 @@ form :is(input, textarea, select) {
 
 label {
     font-size: 0.8em;
+    font-weight: bold;
     display: block;
     margin-bottom: 1em;
 }
