@@ -31,7 +31,7 @@ textarea, body {
 body {
     display: flex;
     flex-direction: column;
-
+    background-color: var(--primary-color) !important;
     gap: 2em;
 }
 
