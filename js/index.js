@@ -31,6 +31,7 @@ window.addEventListener('load', function() {
             clickCount = 0; // Reset the click counter
             button.textContent = "Crazy Mode"; // Update button text
             root.style.setProperty('--primary-color', 'white');
+            root.style.setProperty('--text-color', 'black');
             root.style.setProperty('--secondary-color', 'grey');
             root.style.setProperty('--accent-color', '#6764FF');
         } else {
@@ -43,6 +44,7 @@ window.addEventListener('load', function() {
                     root.style.setProperty('--primary-color', getRandomColor());
                     root.style.setProperty('--secondary-color', getRandomColor());
                     root.style.setProperty('--accent-color', getRandomColor());
+                    root.style.setProperty('--text-color', getRandomColor());
                 }, 100); // Change color every 0.1 seconds
 
                 button.textContent = "Stop Crazy Mode"; // Update button text

@@ -157,7 +157,12 @@ form .styled-box {
     width: 100%;
 }
 
+form :is(label,option,#ausbilder-select){
+    background-color: var(--primary-color);
+}
+
 form :is(input, textarea, select) {
+    background-color: var(--primary-color);
     border: 1px solid var(--secondary-color);
     border-radius: var(--border-radius);
     padding: 1em;
