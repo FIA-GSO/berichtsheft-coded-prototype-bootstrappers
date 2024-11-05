@@ -211,8 +211,13 @@ textarea {
 .footer-text {
     text-align: center;
     padding: 1em;
-    transform: translateY(-10vh);
 }
+@media screen and (max-height: 1080px) {
+    .footer-text {
+        transform: translateY(-10vh);
+    }
+}
+
 
 select.round {
     /* styling */
