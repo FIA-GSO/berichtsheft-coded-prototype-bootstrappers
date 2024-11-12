@@ -32,7 +32,7 @@ The HTML structure includes the following main sections:
 
 - HTML5-compliant browser
 - CSS styling linked from `../css/style.css`
-- Optional: `index.js` for interactive elements
+- Javascript: `index.js` for interactive elements
 
 ## Styling
 
